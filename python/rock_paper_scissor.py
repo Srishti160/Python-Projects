@@ -41,18 +41,3 @@ else:
     print("...SORRY! YOU LOOSE...")
 
 print(f"WIN SCORE {user_win} ; LOOSE SCORE {loose} ; TIE SCORE {tie}")
-
-
-#if user chooses r and comp chooses r- tie
-#if user chooses p and comp chooses p- tie
-#if user chooses s and comp chooses s- tie
-#if user chooses r and comp chooses p- lose
-#if user chooses r and comp chooses s- win
-#if user chooses p and comp chooses r- win
-#if user chooses p and comp chooses s- loose
-#if user chooses s and comp chooses r- loose
-#if user chooses s and comp chooses p- win
-#continue?
-# if yes
-# loop
-#else end
