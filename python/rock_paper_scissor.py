@@ -1,6 +1,9 @@
 import random
-choices=('r' , 'p' , 's')
-emojis= {'r':'🪨', 'p':'📃', 's':'✂️'}
+ROCK='r'
+PAPER='p'
+SCISSOR='s'
+emojis= { ROCK:'🪨', PAPER:'📃', SCISSOR:'✂️'}
+choices=tuple(emojis.keys())
 user_win=0 
 comp_win=0 
 tie=0
@@ -23,7 +26,7 @@ def get_res(user_choice, comp_choice):
     if user_choice==comp_choice:
         print('Tie!')
         tie+=1
-    elif (user_choice=='r' and comp_choice=='s') or (user_choice=='p' and comp_choice=='r') or (user_choice=='s' and comp_choice=='p'):
+    elif (user_choice==ROCK and comp_choice==SCISSOR) or (user_choice==PAPER and comp_choice==ROCK) or (user_choice==SCISSOR and comp_choice==PAPER):
         print("You win!")
         user_win+=1
     else:
@@ -53,6 +56,5 @@ def play():
 
     Overall_score()
     print(f"WIN SCORE {user_win} ; LOOSE SCORE {loose} ; TIE SCORE {tie}")
-
 
 play()
